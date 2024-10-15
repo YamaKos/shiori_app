@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>しおり閲覧アプリ</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <div class="header">
+    <button id="menuButton" class="hamburger">☰</button>
+  </div>
+
+  <div id="toc" class="toc hidden">
+    <button id="closeButton" class="close-button">×</button>
+    <ul>
+      <li onclick="goToPage(0)">p.1　　表紙</li>
+      <li onclick="goToPage(1)">p.2　　修学旅行実行委員長あいさつ</li>
+      <li onclick="goToPage(2)">p.3　　校長あいさつ</li>
+      <li onclick="goToPage(3)">p.4　　修学旅行の心得1</li>
+      <li onclick="goToPage(4)">p.5　　修学旅行の心得2</li>
+      <li onclick="goToPage(5)">p.6　　健康管理について</li>
+      <li onclick="goToPage(6)">p.7　　持ち物</li>
+      <li onclick="goToPage(7)">p.8　　バス座席表</li>
+      <li onclick="goToPage(8)">p.9　　Day1予定表</li>
+      <li onclick="goToPage(9)">p.10 　名古屋観光について</li>
+      <li onclick="goToPage(10)">p.11 　1日目宿泊先:池の平ホテル</li>
+      <li onclick="goToPage(11)">p.12 　Day2予定表</li>
+      <li onclick="goToPage(12)">p.13 　諏訪湖、諏訪大社について</li>
+      <li onclick="goToPage(13)">p.14 　2日目宿泊先:安曇野ホテル</li>
+      <li onclick="goToPage(14)">p.15 　Day3予定表</li>
+      <li onclick="goToPage(15)">p.16 　Notes</li>
+    </ul>
+  </div>
+
+  <div class="carousel">
+    <img src="images/page1.jpg" class="page" alt="Page 1">
+    <img src="images/page2.jpg" class="page" alt="Page 2">
+    <img src="images/page3.jpg" class="page" alt="Page 3">
+    <img src="images/page4.jpg" class="page" alt="Page 4">
+    <img src="images/page5.jpg" class="page" alt="Page 5">
+    <img src="images/page6.jpg" class="page" alt="Page 6">
+    <img src="images/page7.jpg" class="page" alt="Page 7">
+    <img src="images/page8.jpg" class="page" alt="Page 8">
+    <img src="images/page9.jpg" class="page" alt="Page 9">
+    <img src="images/page10.jpg" class="page" alt="Page 10">
+    <img src="images/page11.jpg" class="page" alt="Page 11">
+    <img src="images/page12.jpg" class="page" alt="Page 12">
+    <img src="images/page13.jpg" class="page" alt="Page 13">
+    <img src="images/page14.jpg" class="page" alt="Page 14">
+    <img src="images/page15.jpg" class="page" alt="Page 15">
+    <img src="images/page16.jpg" class="page" alt="Page 16">
+
+  </div>
+
+  <div class="footer">
+    <span id="pageIndicator">1 / 16</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
